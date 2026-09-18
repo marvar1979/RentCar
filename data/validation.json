@@ -1,0 +1,51 @@
+{
+  "validatedAt": "2026-09-18",
+  "checks": [
+    {
+      "name": "JavaScript syntax",
+      "result": "PASS",
+      "detail": "node --check on all JS files"
+    },
+    {
+      "name": "JSON validity",
+      "result": "PASS",
+      "detail": "seed.json and modelo-datos.json parsed successfully"
+    },
+    {
+      "name": "Authentication",
+      "result": "PASS",
+      "detail": "valid login, invalid login and session retrieval tested"
+    },
+    {
+      "name": "RBAC",
+      "result": "PASS",
+      "detail": "Cashier, Mechanic and HumanResources allowed/denied endpoint checks passed"
+    },
+    {
+      "name": "Customer CRUD",
+      "result": "PASS",
+      "detail": "create + list count verified"
+    },
+    {
+      "name": "Reservation collision",
+      "result": "PASS",
+      "detail": "overlapping booking rejected"
+    },
+    {
+      "name": "Rental workflow",
+      "result": "PASS",
+      "detail": "reservation -> contract -> return -> unpaid close rejected -> payment -> close"
+    },
+    {
+      "name": "Dashboard and reports",
+      "result": "PASS",
+      "detail": "dashboard KPIs, financial report and audit retrieval verified"
+    },
+    {
+      "name": "Asset references",
+      "result": "PASS",
+      "detail": "all local HTML src/href references resolve"
+    }
+  ],
+  "note": "Functional logic tests were executed in a JavaScript runtime with browser storage mocked. UI files were also syntax/reference checked."
+}
